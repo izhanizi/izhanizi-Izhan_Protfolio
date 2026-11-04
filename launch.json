@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Run portfolio in Chrome",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}/illustration-portfolio-main",
+            "preLaunchTask": "Start portfolio dev server"
+        }
+    ]
+}

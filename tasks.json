@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start portfolio dev server",
+            "type": "shell",
+            "command": "npm",
+            "args": [
+                "run",
+                "dev",
+                "--",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "5173"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/illustration-portfolio-main"
+            },
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "vite",
+                "pattern": {
+                    "regexp": "^$"
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".",
+                    "endsPattern": "Local:.*"
+                }
+            },
+            "presentation": {
+                "reveal": "never",
+                "panel": "dedicated"
+            }
+        }
+    ]
+}
